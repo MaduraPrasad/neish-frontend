@@ -1,0 +1,58 @@
+/* Job.css */
+.job-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.job-logo {
+    width: 120px; /* Adjusted for better layout */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.2s;
+}
+
+.job-logo:hover {
+    transform: scale(1.05);
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.job-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.job-title {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.job-address {
+    margin: 3px 0;
+    color: #777;
+}
+
+.job-details p {
+    margin: 4px 0;
+}

@@ -1,0 +1,98 @@
+/* JobList.css */
+
+.job-list {
+    margin: 20px auto;
+    max-width: 1200px; /* Constrain width for better readability */
+    padding: 0 15px;
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.title {
+    font-size: 2.5em; /* Larger title for better emphasis */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center-align title */
+}
+
+.filters {
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #f5e2e2cb;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Center-align filters */
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px; /* Add spacing around each filter group */
+}
+
+.filter-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #7c7b7b; /* Slightly lighter color for labels */
+}
+
+.filter-select, .search-input, .level-input, .search-button {
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.filter-select {
+    width: 200px;
+}
+
+.search-input, .level-input {
+    width: 300px;
+}
+
+.search-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s, transform 0.2s; /* Smooth transition */
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.search-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add focus ring */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        margin: 0;
+        width: 100%;
+    }
+
+    .search-input, .level-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+}
